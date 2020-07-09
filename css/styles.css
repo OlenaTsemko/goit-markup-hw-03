@@ -24,23 +24,57 @@
   --background-footer-color: #2f303a;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: var(--background-main-color);
   font-family: var(--main-font);
   color: var(--primary-text-color);
 }
+
+/* Универсальные */
 .link {
+  display: block;
   text-decoration: none;
 }
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .address {
   font-style: normal;
 }
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 2px solid turquoise;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /* Логотип в шапке */
 .logo {
+  margin-right: 85px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -61,6 +95,26 @@ body {
 }
 
 /* Шапка сайта */
+.header > .container,
+.navigation,
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+.navigation-list-item:not(:last-child),
+.header-address-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-address-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.navigation-list-item .link,
+.header-address-list-item .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .navigation-list-item-link,
 .header-address-list-item-link {
   font-weight: 500;
@@ -78,24 +132,42 @@ body {
 .header-address-list-item-link {
   color: var(--primary-text-color);
 }
+.navigation-list-item-link.current {
+  color: var(--accent-color);
+}
 
 /* Секция Герой */
+.hero {
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.hero > .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-hero-color);
-  background-color: rgba(47, 48, 58, 0.8);
+}
+.hero .modal-btn {
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .modal-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* display: flex; */
-  /* align-items: center; */
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
