@@ -183,6 +183,9 @@ h6 {
 }
 
 /* Особенности */
+.features {
+  padding-top: 94px;
+}
 .features-list {
   display: flex;
   justify-content: space-between;
@@ -225,7 +228,16 @@ h6 {
 }
 
 /* Деятельность */
+.activity-list {
+  display: flex;
+  justify-content: space-between;
+}
+.activity-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -234,6 +246,9 @@ h6 {
   color: var(--title-color);
 }
 .activity-list-item-description {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -248,10 +263,23 @@ h6 {
 .team {
   background-color: var(--background-secondary-color);
 }
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
 .team-list-item {
   background-color: var(--background-main-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list-item-img {
+  margin-bottom: 30px;
+}
+.team-list-item-name {
+  margin-bottom: 10px;
 }
 .team-list-item-name,
 .team-list-item-position {
@@ -263,8 +291,19 @@ h6 {
   color: var(--title-color);
 }
 .team-list-item-position {
+  margin-top: 0;
+  margin-bottom: 16;
+
   font-weight: 400;
   color: var(--primary-text-color);
+}
+.team .social-list {
+  display: flex;
+  justify-content: space-between;
+
+  padding-right: 32px;
+  padding-bottom: 24px;
+  padding-left: 32px;
 }
 .social-list-item-link {
   background-color: var(--background-main-color);
@@ -273,8 +312,24 @@ h6 {
 .social-list-item-link:focus {
   background-color: var(--accent-color);
 }
+.social-list-item-link-img {
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+}
 
 /* Постоянные клиенты */
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+.customers-list-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  width: 170px;
+  height: 90px;
+}
 
 /* Логотип в подвале */
 .footer-address-container .logo {
