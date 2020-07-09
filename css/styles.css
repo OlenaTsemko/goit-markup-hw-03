@@ -70,6 +70,10 @@ h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* Логотип в шапке */
 .logo {
@@ -179,10 +183,30 @@ h6 {
 }
 
 /* Особенности */
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+.features-list-item {
+  width: 270px;
+}
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .features-list-item-img {
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
   background-color: var(--background-secondary-color);
 }
 .features-subtitle {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -191,6 +215,9 @@ h6 {
   color: var(--title-color);
 }
 .features-description {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
