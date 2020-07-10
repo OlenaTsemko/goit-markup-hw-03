@@ -176,6 +176,7 @@ h6 {
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -197,6 +198,7 @@ h6 {
   margin-right: 30px;
 }
 .features-list-item-img {
+  display: block;
   padding-top: 25px;
   padding-right: 100px;
   padding-bottom: 25px;
@@ -245,6 +247,9 @@ h6 {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+.activity-list-item-img {
+  display: block;
+}
 .activity-list-item-description {
   margin-top: 0;
   margin-bottom: 0;
@@ -276,6 +281,7 @@ h6 {
   margin-right: 30px;
 }
 .team-list-item-img {
+  display: block;
   margin-bottom: 30px;
 }
 .team-list-item-name {
@@ -305,6 +311,9 @@ h6 {
   padding-bottom: 24px;
   padding-left: 32px;
 }
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
 .social-list-item-link {
   background-color: var(--background-main-color);
 }
@@ -323,12 +332,19 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
-.customers-list-item {
+.customers-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
   width: 170px;
   height: 90px;
+}
+.customers-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Логотип в подвале */
