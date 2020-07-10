@@ -303,10 +303,11 @@ h6 {
   font-weight: 400;
   color: var(--primary-text-color);
 }
-.team .social-list {
+.social-list {
   display: flex;
   justify-content: space-between;
-
+}
+.team .social-list {
   padding-right: 32px;
   padding-bottom: 24px;
   padding-left: 32px;
@@ -349,6 +350,9 @@ h6 {
 
 /* Логотип в подвале */
 .footer-address-container .logo {
+  margin-bottom: 20px;
+  margin-right: 0;
+
   color: #ffffff;
 }
 .footer-address-container .logo:hover,
@@ -361,8 +365,29 @@ h6 {
 }
 
 /* Подвал */
+.footer > .container {
+  display: flex;
+}
+.footer-address-container {
+  margin-right: 69px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-social-list-container {
+  margin-right: 94px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+.footer-form-container {
+  margin-left: auto;
+  padding-top: 72px;
+  padding-bottom: 94px;
+}
 .footer {
   background-color: var(--background-footer-color);
+}
+.footer-address-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-address-list-item-link {
   font-weight: 400;
@@ -380,6 +405,9 @@ h6 {
 }
 .footer-social-list-container .text,
 .footer-form-container .text {
+  display: block;
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -387,6 +415,7 @@ h6 {
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
+
 .footer .social-list-item-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
