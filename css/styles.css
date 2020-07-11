@@ -313,7 +313,6 @@ h6 {
 .social-list {
   display: flex;
   justify-content: space-between;
-  width: 206px;
 }
 .team .social-list {
   padding-right: 32px;
@@ -421,6 +420,9 @@ h6 {
 .footer-address-list-item-link:hover,
 .footer-address-list-item-link:focus {
   color: var(--accent-color);
+}
+.footer .social-list {
+  width: 206px;
 }
 .footer-social-list-container .text,
 .footer-form-container .text {
